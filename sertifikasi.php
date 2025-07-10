@@ -14,9 +14,9 @@
                     onmouseover="this.style.transform='scale(1.02)'"
                     onmouseout="this.style.transform='scale(1)'">
                     <div style="height: 250px; overflow: hidden;">
-                        <iframe src="assets/document/Mengenal Pemograman Komputer.pdf"
+                        <img src="https://image.web.id/images/codepolitan-logoc787963e27f753de.png"
                             style="width: 100%; height: 100%; border: none;"
-                            title="Sertifikat Web Dasar PDF"></iframe>
+                            title="Sertifikat Web Dasar PDF"></img>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title fw-semibold">Mengenal Pemograman Computer</h5>
