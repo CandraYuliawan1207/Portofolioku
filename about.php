@@ -7,13 +7,14 @@
             </div>
             <div class="col-md-8" data-aos="fade-left">
                 <h2 class="fw-bold">Tentang Saya</h2>
-                <p class="text-muted">Halo! Saya <strong>Candra Yuliawan</strong>, saat ini bekerja sebagai <strong>Office Administrator</strong> di perusahaan kelapa sawit dan sedang mendalami dunia <strong>Web Developer</strong>.</p>
+                <p class="text-muted">Halo! Saya <strong>Candra Yuliawan</strong>, saat ini bekerja sebagai <strong>Office Administrator</strong> di sebuah perusahaan yang bergerak di bidang pengolahan minyak kelapa sawit dan sedang mendalami dunia <strong>Web Developer</strong>.</p>
                 <p>Saya terbiasa mengelola data, dokumen perusahaan, serta memiliki passion dalam membuat aplikasi web sederhana menggunakan PHP, Bootstrap, dan SQL. Sekarang, saya sedang fokus membangun portofolio project pribadi.</p>
 
-                <h5 class="mt-4">Skill Saya:</h5>
+                <h5 class="mt-4">Skill Saya:</h5>   
                 <ul class="list-unstyled">
                     <li><i class="fa-solid fa-check text-success"></i> Microsoft Word & Excel (Advanced)</li>
                     <li><i class="fa-solid fa-check text-success"></i> PHP & MySQL</li>
+                    <li><i class="fa-solid fa-check text-success"></i> Database Administration</li>
                     <li><i class="fa-solid fa-check text-success"></i> HTML, CSS, JavaScript</li>
                     <li><i class="fa-solid fa-check text-success"></i> Bootstrap 5 & Font Awesome</li>
                     <li><i class="fa-solid fa-check text-success"></i> Basic UI/UX Design</li>

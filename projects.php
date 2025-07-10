@@ -19,7 +19,7 @@
                                 <i class="fa-solid fa-ship me-2 text-success"></i>
                                 Dermaga System - PT. Selatan Agro Makmur Lestari
                             </h5>
-                            <p class="card-text">Sistem digital rekap laporan operasional dermaga untuk monitoring aktivitas CPO & Kernel secara real-time.</p>
+                            <p class="card-text">Sistem digital rekap laporan operasional dermaga untuk monitoring aktivitas Operasional Penerimaan TBS via Jukung dan Ponton.</p>
                         </div>
                     </div>
                 </a>

@@ -23,7 +23,7 @@
         <h6 class="text-uppercase fw-bold mb-3">Lainnya</h6>
         <ul class="list-unstyled" style="font-size: 0.875rem;">
           <li><a href="#skills" class="text-white text-decoration-none">Keahlian</a></li>
-          <li><a href="#certificates" class="text-white text-decoration-none">Sertifikat</a></li>
+          <li><a href="sertifikasi.php" class="text-white text-decoration-none">Sertifikat</a></li>
         </ul>
       </div>
 
