@@ -3,7 +3,7 @@
     <section class="container py-5">
         <div class="text-center mb-5" data-aos="fade-down">
             <img src="https://image.web.id/images/codepolitan-logoc787963e27f753de.png" alt="CodePolitan" style="height: 50px;" class="mb-3">
-            <h2 class="fw-bold">Sertifikasi Bootcamp</h2>
+            <h2 class="fw-bold">Sertifikasi Bootcamp Codepolitan</h2>
             <p class="text-muted">Kumpulan sertifikat yang saya peroleh dari pelatihan intensif kelas Fullstack Developer di CodePolitan sejak Januari 2024.</p>
         </div>
 
