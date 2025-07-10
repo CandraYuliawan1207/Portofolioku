@@ -54,6 +54,50 @@
   AOS.init();
 </script>
 <script src="assets/js/script.js"></script>
+<!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // mencegah submit default
+
+    const formData = new FormData(this);
+
+    fetch("https://formsubmit.co/ajax/candrayln275@gmail.com", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Terkirim!',
+            text: 'Email kamu berhasil terkirim.',
+            confirmButtonColor: '#198754'
+          });
+          this.reset(); // reset form
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Gagal mengirim. Coba lagi nanti.',
+            confirmButtonColor: '#dc3545'
+          });
+        }
+      })
+      .catch(error => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Kesalahan',
+          text: 'Terjadi kesalahan jaringan.',
+          confirmButtonColor: '#dc3545'
+        });
+      });
+  });
+</script>
 </body>
 
 </html>
