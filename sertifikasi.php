@@ -13,11 +13,12 @@
                 <div class="card border-0 shadow h-100" style="transition: transform 0.3s;"
                     onmouseover="this.style.transform='scale(1.02)'"
                     onmouseout="this.style.transform='scale(1)'">
-                    <div style="height: 250px; overflow: hidden;">
-                        <img src="https://image.web.id/images/codepolitan-logoc787963e27f753de.png"
-                            style="width: 100%; height: 100%; border: none;"
-                            title="Sertifikat Web Dasar PDF"></img>
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+                        <iframe src="assets/document/Mengenal Pemograman Komputer.pdf" frameborder="0"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;" allowfullscreen>
+                        </iframe>
                     </div>
+
                     <div class="card-body">
                         <h5 class="card-title fw-semibold">Mengenal Pemograman Computer</h5>
                         <a href="https://www.codepolitan.com/c/2MV3LOK/" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
