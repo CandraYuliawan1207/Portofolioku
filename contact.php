@@ -56,9 +56,7 @@
                             <!-- Instagram -->
                             <div class="col-6">
                                 <a href="https://instagram.com/cacanmu" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-instagram fa-2x mb-2 text-danger"></i>
                                         <p class="mb-0 text-dark fw-semibold small">Instagram</p>
                                     </div>
@@ -68,9 +66,7 @@
                             <!-- Facebook -->
                             <div class="col-6">
                                 <a href="https://facebook.com/candra.yulyawan.714" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-facebook fa-2x mb-2 text-primary"></i>
                                         <p class="mb-0 text-dark fw-semibold small">Facebook</p>
                                     </div>
@@ -80,20 +76,17 @@
                             <!-- WhatsApp -->
                             <div class="col-6">
                                 <a href="https://wa.me/6282269482581" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-whatsapp fa-2x mb-2 text-success"></i>
                                         <p class="mb-0 text-dark fw-semibold small">WhatsApp</p>
                                     </div>
                                 </a>
                             </div>
 
+                            <!-- Tiktok -->
                             <div class="col-6">
                                 <a href="https://www.tiktok.com/@cacanmuuu" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-tiktok fa-2x mb-2 text-success"></i>
                                         <p class="mb-0 text-dark fw-semibold small">Tiktok</p>
                                     </div>
@@ -103,9 +96,7 @@
                             <!-- LinkedIn -->
                             <div class="col-6">
                                 <a href="https://www.linkedin.com/in/candra-yuliawan-2627452b7/" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-linkedin fa-2x mb-2 text-info"></i>
                                         <p class="mb-0 text-dark fw-semibold small">LinkedIn</p>
                                     </div>
@@ -115,15 +106,12 @@
                             <!-- GitHub -->
                             <div class="col-6">
                                 <a href="https://github.com/CandraYuliawan1207" target="_blank" class="text-decoration-none">
-                                    <div class="card text-center border-0 shadow-sm p-3 social-card" style="transition: all 0.3s; background-color: #fff;"
-                                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.15)'"
-                                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'">
+                                    <div class="card text-center border-0 shadow-sm p-3 social-card">
                                         <i class="fa-brands fa-github fa-2x mb-2 text-dark"></i>
                                         <p class="mb-0 text-dark fw-semibold small">GitHub</p>
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
