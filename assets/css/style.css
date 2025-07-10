@@ -36,29 +36,3 @@ a.nav-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
-
-/* style contact page */
-
-.social-card {
-    transition: all 0.3s;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.social-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 576px) {
-    .social-card {
-        padding: 1rem !important;
-    }
-    .social-card i {
-        font-size: 1.5rem !important;
-    }
-    .social-card p {
-        font-size: 0.8rem !important;
-    }
-}
