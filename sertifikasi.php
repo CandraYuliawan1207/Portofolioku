@@ -3,7 +3,7 @@
     <section class="container py-5">
         <div class="text-center mb-5" data-aos="fade-down">
             <img src="https://image.web.id/images/codepolitan-logoc787963e27f753de.png" alt="CodePolitan" style="height: 50px;" class="mb-3">
-            <h2 class="fw-bold">Sertifikasi Bootcamp Codepolitan</h2>
+            <h2 class="fw-bold">Sertifikasi Bootcamp</h2>
             <p class="text-muted">Kumpulan sertifikat yang saya peroleh dari pelatihan intensif kelas Fullstack Developer di CodePolitan sejak Januari 2024.</p>
         </div>
 
@@ -14,9 +14,9 @@
                     onmouseover="this.style.transform='scale(1.02)'"
                     onmouseout="this.style.transform='scale(1)'">
                     <div style="height: 250px; overflow: hidden;">
-                        <embed src="assets/document/Mengenal Pemograman Komputer.pdf"
+                        <iframe src="assets/document/Mengenal Pemograman Komputer.pdf"
                             style="width: 100%; height: 100%; border: none;"
-                            title="Sertifikat Web Dasar PDF"></embed>
+                            title="Sertifikat Web Dasar PDF"></iframe>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title fw-semibold">Mengenal Pemograman Computer</h5>
