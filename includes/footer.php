@@ -1,0 +1,59 @@
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-start">
+
+      <!-- Kolom 1: Brand Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold" style="color: #efb509;">CYuliawan</h5>
+        <p style="font-size: 0.875rem;">Portofolio pribadi Candra Yuliawan yang menampilkan berbagai proyek dan keahlian di bidang Web Development & Administrasi Perkantoran.</p>
+      </div>
+
+      <!-- Kolom 2: Menu Navigasi -->
+      <div class="col-md-2 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Navigasi</h6>
+        <ul class="list-unstyled" style="font-size: 0.875rem;">
+          <li><a href="index.php" class="text-white text-decoration-none">Beranda</a></li>
+          <li><a href="about.php" class="text-white text-decoration-none">Tentang Saya</a></li>
+          <li><a href="projects.php" class="text-white text-decoration-none">Proyek</a></li>
+          <li><a href="contact.php" class="text-white text-decoration-none">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Lainnya</h6>
+        <ul class="list-unstyled" style="font-size: 0.875rem;">
+          <li><a href="#skills" class="text-white text-decoration-none">Keahlian</a></li>
+          <li><a href="#certificates" class="text-white text-decoration-none">Sertifikat</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Kontak Info -->
+      <div class="col-md-4 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
+        <p style="font-size: 0.875rem;">
+          <i class="fa-solid fa-envelope me-2 text-success"></i> candrayln275@gmail.com<br>
+          <i class="fa-brands fa-whatsapp me-2 text-success"></i> +62 822-6948-2581<br>
+          <i class="fa-solid fa-location-dot me-2 text-success"></i> Air Sugihan, Sumatera - Selatan, Indonesia, 30656
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center" style="font-size: 0.8rem;">
+      <p class="mb-0">&copy;<?= date("Y") ?> <strong>CYuliawan Web Developer</strong>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* Sticky Footer Layout */
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2d3342, #689f99);
+    color: white;
+}
+
+a.btn-warning {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+a.nav-link:hover {
+    color: #efb509 !important;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
