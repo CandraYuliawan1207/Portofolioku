@@ -48,6 +48,35 @@
   </div>
 </footer>
 
+<style>
+  @media screen and (max-width: 576px) {
+    .swal2-popup {
+      width: 95% !important;
+      max-width: 95% !important;
+      padding: 1.2rem !important;
+    }
+
+    .swal2-title {
+      font-size: 1.1rem !important;
+    }
+
+    .swal2-html-container {
+      font-size: 0.9rem !important;
+    }
+
+    .swal2-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .swal2-styled {
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+  }
+</style>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -76,7 +105,10 @@
             icon: 'success',
             title: 'Terkirim!',
             text: 'Email kamu berhasil terkirim.',
-            confirmButtonColor: '#198754'
+            confirmButtonColor: '#198754',
+            customClass: {
+              popup: 'swal2-responsive'
+            }
           });
           this.reset(); // reset form
         } else {
