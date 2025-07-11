@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <main>
-    <section class="container py-5">
+    <section class="container py-5" style="overflow-x: hidden;">
         <div class="row align-items-center">
             <div class="col-md-4 text-center" data-aos="fade-right">
                 <img src="assets/img/aku.jpeg" class="img-fluid rounded-circle shadow" width="320" alt="Foto Candra">

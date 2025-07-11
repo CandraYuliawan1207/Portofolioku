@@ -11,6 +11,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <style>
+        img.wave {
+            z-index: 2;
+        }
+
+        @media(max-width:576px) {
+            img.wave {
+                width: 100px;
+                top: 15%;
+            }
+        }
+
         .hover-shadow {
             transition: all 0.8s ease;
         }

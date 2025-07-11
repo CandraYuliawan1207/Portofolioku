@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+<footer class="bg-dark text-white pt-5 pb-3">
   <div class="container">
     <div class="row text-start">
 
@@ -22,7 +22,7 @@
       <div class="col-md-2 mb-4">
         <h6 class="text-uppercase fw-bold mb-3">Lainnya</h6>
         <ul class="list-unstyled" style="font-size: 0.875rem;">
-          <li><a href="#skills" class="text-white text-decoration-none">Keahlian</a></li>
+          <li><a href="skill.php" class="text-white text-decoration-none">Keahlian</a></li>
           <li><a href="sertifikasi.php" class="text-white text-decoration-none">Sertifikat</a></li>
         </ul>
       </div>
