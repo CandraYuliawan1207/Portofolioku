@@ -24,6 +24,7 @@
         <ul class="list-unstyled" style="font-size: 0.875rem;">
           <li><a href="skill.php" class="text-white text-decoration-none">Keahlian</a></li>
           <li><a href="sertifikasi.php" class="text-white text-decoration-none">Sertifikat</a></li>
+          <li><a href="lokasi.php" class="text-white text-decoration-none">Lokasi</a></li>
         </ul>
       </div>
 
