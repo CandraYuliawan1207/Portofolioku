@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<main style="margin-bottom: 0; overflow-x :hidden;">
+<main style="margin-bottom: 0;">
     <section class="hero text-black text-center d-flex align-items-center justify-content-center"
         style="height: 80vh; position: relative;">
         <!-- Animasi Wave -->
