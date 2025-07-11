@@ -25,6 +25,7 @@
           <li><a href="skill.php" class="text-white text-decoration-none">Keahlian</a></li>
           <li><a href="sertifikasi.php" class="text-white text-decoration-none">Sertifikat</a></li>
           <li><a href="lokasi.php" class="text-white text-decoration-none">Lokasi</a></li>
+          <li><a href="services.php" class="text-white text-decoration-none">Services</a></li>
         </ul>
       </div>
 
@@ -33,7 +34,7 @@
         <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
         <p style="font-size: 0.875rem;">
           <i class="fa-solid fa-envelope me-2 text-success"></i> candrayln275@gmail.com<br>
-          <i class="fa-brands fa-whatsapp me-2 text-success"></i> +62 822-6948-2581<br>
+          <i class="fa-solid fa-phone me-2 text-success"></i> +62 822-8207-6291<br>
           <i class="fa-solid fa-location-dot me-2 text-success"></i> Air Sugihan, Sumatera - Selatan, Indonesia, 30656
         </p>
       </div>
