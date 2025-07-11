@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <main>
-    <section class="container py-5">
+    <section class="container py-5" style="overflow-x: hidden;">
         <!-- Judul -->
         <div class="text-center mb-5" data-aos="fade-down">
             <h2 class="fw-bold">Keahlian Saya</h2>
