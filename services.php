@@ -140,9 +140,10 @@
 
                             <?php
                             $whatsapp = "6282269482581";
+                            $text = "Halo kak CYuliawan Web Developer, saya ingin memesan layanan {$srv['title']}, apakah bisa di bantu informasinya?";
                             ?>
                             <div class="mt-auto">
-                                <a href="https://wa.me/<?= $whatsapp ?>?text=Halo%20saya%20ingin%20memesan%20layanan%20*<?= urlencode($srv['title']) ?>*"
+                                <a href="https://wa.me/<?= $whatsapp ?>?text=<?= urlencode($text) ?>"
                                     class="btn btn-<?= $srv['color'] ?> rounded-pill mt-3 px-4 fw-semibold" target="_blank">
                                     Pesan Layanan
                                 </a>
