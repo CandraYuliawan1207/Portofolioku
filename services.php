@@ -140,7 +140,7 @@
 
                             <?php
                             $whatsapp = "6282269482581";
-                            $text = "Halo kak CYuliawan Web Developer, saya ingin memesan layanan {$srv['title']}, apakah bisa di bantu informasinya?";
+                            $text = "Halo kak *CYuliawan Web Developer*, saya ingin memesan layanan {$srv['title']}, apakah bisa di bantu informasinya?";
                             ?>
                             <div class="mt-auto">
                                 <a href="https://wa.me/<?= $whatsapp ?>?text=<?= urlencode($text) ?>"
