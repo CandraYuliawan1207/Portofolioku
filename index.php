@@ -1,6 +1,7 @@
 <?php include 'includes/header.php'; ?>
-<main style="margin-bottom: 0;">
-    <section class="hero text-black text-center d-flex align-items-center justify-content-center" style="height: 80vh; position: relative;">
+<main style="margin-bottom: 0; overflow-x :hidden;">
+    <section class="hero text-black text-center d-flex align-items-center justify-content-center"
+        style="height: 80vh; position: relative;">
         <!-- Animasi Wave -->
         <img src="https://threedio-prod-var-cdn.icons8.com/if/preview_sets/previews/WdouIOZIHd9p4jHt.webp"
             alt="Waving silhouette man"
