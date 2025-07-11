@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <main>
-    <section class="container py-5" style="overflow-x: hidden;">
+    <section class="container py-5" style="overflow-x: hidden; overflow-y:hidden;">
         <!-- Judul -->
         <div class="text-center mb-5" data-aos="fade-down">
             <h2 class="fw-bold">Keahlian Saya</h2>
@@ -14,11 +14,11 @@
                 <?php
                 $hardSkills = [
                     ['HTML5', 90, 'html5', 'danger'],
-                    ['CSS3', 85, 'css3', 'primary'],
+                    ['CSS3', 85, 'css3', 'info'],
+                    ['Bootstrap', 80, 'bootstrap', 'primary'],
                     ['JavaScript', 70, 'javascript', 'warning'],
                     ['PHP & MySQL', 85, 'php', 'success', 'mysql'],
-                    ['Bootstrap', 80, 'bootstrap', 'info'],
-                    ['Git & GitHub', 75, 'git', 'dark', 'github']
+                    ['Git & GitHub', 80, 'git', 'dark', 'github']
                 ];
 
                 $delay = 0;
