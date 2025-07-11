@@ -36,3 +36,33 @@ a.nav-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+
+
+/* style cv.php */
+
+.cv-a4 {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #cv-content,
+    #cv-content * {
+        visibility: visible;
+    }
+    #cv-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+}
