@@ -97,7 +97,7 @@
 
             foreach ($services as $i => $srv):
                 $id = "featureCollapse$i";
-                ?>
+            ?>
                 <div class="col" data-aos="zoom-in-up" data-aos-delay="<?= $i * 150 ?>">
                     <div class="card h-100 shadow-sm border-0">
                         <div
@@ -130,7 +130,7 @@
                                         $active = $fitur[1];
                                         $class = $active ? 'text-success fw-semibold' : 'text-muted text-decoration-line-through';
                                         $icon = $active ? 'fa-check-circle' : 'fa-times-circle';
-                                        ?>
+                                    ?>
                                         <li class="<?= $class ?>"><i class="fa-solid <?= $icon ?> me-2"></i>
                                             <?= $fitur[0] ?>
                                         </li>
@@ -145,7 +145,8 @@
                             <div class="mt-auto">
                                 <a href="https://wa.me/<?= $whatsapp ?>?text=<?= urlencode($text) ?>"
                                     class="btn btn-<?= $srv['color'] ?> rounded-pill mt-3 px-4 fw-semibold" target="_blank">
-                                    Pesan Layanan
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Book Now
                                 </a>
                             </div>
                         </div>
