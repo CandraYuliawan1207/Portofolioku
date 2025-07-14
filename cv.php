@@ -1,151 +1,136 @@
 <?php include 'includes/header.php'; ?>
-<main class="py-5 bg-light">
+<main class="bg-light py-4">
     <div class="container text-end mb-3">
-        <button class="btn btn-success" onclick="printCV()">
-            <i class="fa-solid fa-download me-1"></i> Download CV
+        <button class="btn btn-danger me-2" onclick="downloadPDF()">
+            <i class="fa-solid fa-file-pdf me-1"></i> Download CV
         </button>
     </div>
 
-    <div id="cv-content" class="cv-a4 bg-white p-5 shadow mx-auto">
+    <div id="cv-a4" class="a4-sheet mx-auto shadow bg-white p-4 p-md-5">
+        <div class="row">
+            <!-- KIRI -->
+            <div class="col-md-4 text-center text-md-start border-end pe-md-4 mb-4 mb-md-0">
+                <img src="assets/img/passfoto.jpeg" alt="Candra Yuliawan" class="rounded-circle img-thumbnail mb-3" style="width: 140px; height: 140px; object-fit: cover;">
+                <h3 class="fw-bold">CANDRA YULIAWAN</h3>
+                <p class="text-muted">Office Administrator & Web Developer</p>
 
-        <!-- Header Foto & Nama -->
-        <div class="d-flex align-items-center mb-4" style="gap: 30px;">
-            <img src="assets/img/passfoto.jpeg" alt="Candra Yuliawan" width="140" height="140" class="rounded-circle border border-3 border-warning shadow object-fit-cover">
-            <div>
-                <h1 class="fw-bold mb-1">Curriculum Vitae</h1>
-                <h3 class="fw-bold mb-1">Candra Yuliawan</h3>
-                <p class="text-muted mb-0">Office Administrator | Web Developer Enthusiast</p>
-                <small>Air Sugihan, Sumatera Selatan | candrayln275@gmail.com | 082269482581</small>
-            </div>
-        </div>
+                <hr>
 
-        <hr>
+                <ul class="list-unstyled small">
+                    <li><i class="fa-solid fa-phone me-2"></i> 0822-6948-2581</li>
+                    <li><i class="fa-solid fa-envelope me-2"></i> candrayln275@gmail.com</li>
+                    <li><i class="fa-solid fa-globe me-2"></i> cyuliawanportofolio.site</li>
+                    <li><i class="fa-solid fa-location-dot me-2"></i> Air Sugihan, Sumatera Selatan</li>
+                </ul>
 
-        <!-- Profil Singkat -->
-        <h5 class="fw-bold mb-2 text-uppercase text-warning">Profil Singkat</h5>
-        <p class="small text-muted">
-            Lulus Sekolah Menengah Atas Negeri jurusan Ilmu Pengetahuan Sosial, cukup berpengalaman dalam bidang perkantoran dan sangat antusias di dunia pengembangan web. Terbiasa menggunakan Microsoft Office, mampu membuat aplikasi web menggunakan HTML, CSS, JavaScript, dan PHP, mampu mengintegrasikan AI dalam dunia kerja dan siap berkembang bersama tim.
-        </p>
+                <hr>
 
-        <!-- Pendidikan & Pengalaman -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h6 class="fw-bold text-uppercase text-success">Pendidikan</h6>
-                <ul class="small">
-                    <li>
-                        <strong>SMA Negeri 2 Air Sugihan</strong><br>
-                        Ilmu Pengetahuan Sosial (2018 - 2021)
-                    </li>
-                    <li>
-                        <strong>Madrasah Tsanawiyah Darussyafa'at</strong><br>
-                        (2015 - 2018)
-                    </li>
-                    <li>
-                        <strong>SD Negeri 1 Mekar Wangi</strong><br>
-                        (2009 - 2015)
-                    </li>
-                    <li>
-                        <strong>TK Dharma Wanita Mekar Wangi</strong><br>
-                        (2008 - 2009)
-                    </li>
+                <h6 class="fw-bold">PENDIDIKAN</h6>
+                <p class="mb-1"><strong>SMA Negeri 2 Air Sugihan</strong><br><small>IPS | 2018–2021</small></p>
+                <p class="mb-1"><strong>MTs Darussyafa’at</strong><br><small>2015–2018</small></p>
+
+                <hr>
+
+                <h6 class="fw-bold">KEMAMPUAN</h6>
+                <ul class="small ps-3">
+                    <li>Microsoft Office</li>
+                    <li>HTML, CSS, PHP</li>
+                    <li>Web Development</li>
+                    <li>CRUD & Database</li>
+                    <li>Editing & Desain</li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <h6 class="fw-bold text-uppercase text-success">Pengalaman Kerja</h6>
+
+            <!-- KANAN -->
+            <div class="col-md-8 ps-md-4">
+                <h6 class="fw-bold text-uppercase text-primary">PROFIL</h6>
+                <p class="small">
+                    Lulusan IPS dengan pengalaman dalam bidang administrasi dan operasional lapangan di perusahaan sawit. Memiliki semangat belajar tinggi, mahir menggunakan teknologi dan antusias mengembangkan solusi digital dengan pendekatan modern.
+                </p>
+
+                <h6 class="fw-bold text-uppercase text-primary mt-4">PENGALAMAN KERJA</h6>
+                <p class="mb-1"><strong>Staf Administrasi</strong> – PT Selatan Agro Makmur Lestari<br><small>2023 – Sekarang</small></p>
                 <ul class="small">
-                    <li>
-                        <strong>Staf Operasional Lapangan – PT Selatan Agro Makmur Lestari</strong><br>
-                        Mei 2021 – Juli 2023<br>
-                        Monitoring penerimaan TBS via armada sungai, menyusun laporan bongkar TBS, house keeping.
-                    </li>
-                    <li>
-                        <strong>Staf Administrasi – PT Selatan Agro Makmur Lestari</strong><br>
-                        Juli 2023 – Sekarang<br>
-                        Membuat laporan harian, menyusun dokumen operasional, input dan pengarsipan data produksi.
-                    </li>
+                    <li>Mengelola laporan harian hingga bulanan.</li>
+                    <li>Input data, pengarsipan dokumen digital & fisik.</li>
+                </ul>
+
+                <p class="mb-1 mt-3"><strong>Staf Operasional Lapangan</strong> – PT SAML<br><small>2021 – 2023</small></p>
+                <ul class="small">
+                    <li>Kontrol bongkar muat armada TBS sungai.</li>
+                    <li>Monitoring operasional lapangan.</li>
+                </ul>
+
+                <h6 class="fw-bold text-uppercase text-primary mt-4">PROYEK & PORTOFOLIO</h6>
+                <ul class="small">
+                    <li><strong>Dermaga System</strong> – PT. Selatan Agro Makmur Lestari</li>
+                    <li><strong>Voting Best Staff</strong> – PT. Selatan Agro Makmur Lestari</li>
+                    <li><strong>Personal Website</strong> – cyuliawanportofolio.site</li>
+                </ul>
+
+                <h6 class="fw-bold text-uppercase text-primary mt-4">LAINNYA</h6>
+                <ul class="small">
+                    <li><strong>Tempat & Tanggal Lahir:</strong> Tugu Mulyo, 12 Juli 2003</li>
+                    <li><strong>Agama:</strong> Islam</li>
+                    <li><strong>Status:</strong> Belum Menikah</li>
+                    <li><strong>Sertifikasi:</strong> Bootcamp Fullstack Web Developer – Codepolitan</li>
                 </ul>
             </div>
         </div>
-
-        <!-- Hard Skills -->
-        <h6 class="fw-bold mt-4 text-uppercase text-success">Hard Skills</h6>
-        <ul class="row small list-unstyled">
-            <li class="col-6">✔ Microsoft Office</li>
-            <li class="col-6">✔ HTML, CSS, JavaScript</li>
-            <li class="col-6">✔ PHP & MySQL</li>
-            <li class="col-6">✔ Git, GitHub</li>
-            <li class="col-6">✔ Bootstrap</li>
-        </ul>
-
-        <!-- Soft Skills -->
-        <h6 class="fw-bold mt-3 text-uppercase text-success">Soft Skills</h6>
-        <ul class="row small list-unstyled">
-            <li class="col-6">✔ Komunikasi Efektif</li>
-            <li class="col-6">✔ Problem Solving</li>
-            <li class="col-6">✔ Manajemen Waktu</li>
-            <li class="col-6">✔ Kepemimpinan</li>
-            <li class="col-6">✔ Kerja Tim</li>
-        </ul>
-
-        <!-- Tools -->
-        <h6 class="fw-bold mt-3 text-uppercase text-success">Tools & Software</h6>
-        <div class="d-flex flex-wrap gap-3 mt-2">
-            <img src="https://img.icons8.com/color/48/microsoft-word-2019--v1.png" height="32" title="MS Word" />
-            <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" height="32" title="MS Excel" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="32" title="VS Code" />
-            <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" height="32" title="XAMPP" />
-            <img src="https://laragon.org/logo.svg" height="32" title="Laragon" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" height="32" title="ChatGPT" />
-            <img src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg" height="32" title="Canva" />
-        </div>
-
-        <!-- Sertifikasi -->
-        <h6 class="fw-bold mt-4 text-uppercase text-success">Sertifikasi</h6>
-        <ul class="small">
-            <li>✔ Bootcamp Fullstack Web Developer – Codepolitan (Jan 2024 – Sekarang)</li>
-        </ul>
     </div>
-
 </main>
 
+<!-- Script download PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
-    function printCV() {
-        window.print();
+    function downloadPDF() {
+        const element = document.getElementById('cv-a4');
+        const opt = {
+            margin: 0,
+            filename: 'CV_Candra_Yuliawan.pdf',
+            image: {
+                type: 'jpeg',
+                quality: 0.98
+            },
+            html2canvas: {
+                scale: 2
+            },
+            jsPDF: {
+                unit: 'mm',
+                format: 'a4',
+                orientation: 'portrait'
+            }
+        };
+        html2pdf().set(opt).from(element).save();
     }
 </script>
 
 <style>
-    @media print {
-        body * {
-            visibility: hidden;
-        }
-
-        #cv-content,
-        #cv-content * {
-            visibility: visible;
-        }
-
-        #cv-content {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            box-shadow: none !important;
-        }
-    }
-
-    .cv-a4 {
+    .a4-sheet {
         width: 210mm;
         min-height: 297mm;
         background: white;
-        padding: 30px;
-        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 30px 40px;
+    }
+
+    .img-thumbnail {
+        border-radius: 50%;
     }
 
     @media screen and (max-width: 768px) {
-        .cv-a4 {
+        .a4-sheet {
             width: 100%;
-            padding: 20px;
+            min-height: auto;
+            padding: 20px !important;
+        }
+
+        .a4-sheet img {
+            width: 100px !important;
+            height: 100px !important;
         }
     }
 </style>
