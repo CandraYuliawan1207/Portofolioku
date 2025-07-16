@@ -18,6 +18,9 @@
         <div data-aos="fade-up" data-aos-delay="500">
             <h1 class="display-4 fw-bold">Candra Yuliawan</h1>
             <p class="lead">Office Administrator | Web Developer Enthusiast</p>
+
+            <p class="fst-italic text-muted" style="font-size: 1.1rem;">“Mulai dari sederhana, tumbuh jadi luar biasa.”</p>
+
             <a href="projects.php" class="btn btn-warning mt-3">Lihat Proyek Saya</a>
         </div>
     </section>
