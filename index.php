@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <!-- PRELOADER LOTTIE -->
-<div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" style="z-index: 9999; background-color: rgba(0, 0, 0, 0.9);">
+<div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" style="z-index: 9999; background-color: rgba(0, 0, 0, 0.6);">
     <!-- Lottie Animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player
