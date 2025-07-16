@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <!-- PRELOADER LOTTIE -->
-<div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-black text-light" style="z-index: 9999;">
+<div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" style="z-index: 9999; background-color: rgba(0, 0, 0, 0.9);">
     <!-- Lottie Animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player
@@ -18,7 +18,7 @@
 <main style="margin-bottom: 0;">
     <section class="hero text-black text-center d-flex align-items-center justify-content-center"
         style="height: 80vh; position: relative;">
-        
+
         <!-- Animasi Wave -->
         <img src="https://threedio-prod-var-cdn.icons8.com/if/preview_sets/previews/WdouIOZIHd9p4jHt.webp"
             alt="Waving silhouette man" style="
@@ -49,7 +49,7 @@
 
 <!-- JS Loader Control -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         let percent = 0;
         const progressText = document.getElementById("progress");
         const preloader = document.getElementById("preloader");
@@ -65,6 +65,6 @@
                     preloader.style.display = "none";
                 }, 400); // Waktu hilangnya preloader
             }
-        }, 40); // 70ms x 100 = 7000ms (7 detik)
+        }, 40); // 40ms x 100 = 4000ms (4 detik)
     });
 </script>
