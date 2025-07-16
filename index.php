@@ -7,12 +7,11 @@
         src="https://assets2.lottiefiles.com/packages/lf20_usmfx6bp.json"
         background="transparent"
         speed="1"
-        style="width: 200px; height: 200px;"
+        style="width: 200px; height: 200px;margin-bottom:-4em;"
         loop
         autoplay>
     </lottie-player>
-
-    <h4 class="fw-bold mt-3">Loading... <span id="progress">0%</span></h4>
+    <h4 class="fw-bold mt-1">Loading... <span id="progress">0%</span></h4>
 </div>
 
 <main style="margin-bottom: 0;">
