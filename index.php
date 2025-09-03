@@ -1,19 +1,22 @@
 <?php include 'includes/header.php'; ?>
+
 <!-- PRELOADER LOTTIE -->
 <div id="preloader" 
      class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" 
-     style="z-index: 9999; background-color: rgba(0, 0, 0, 0.8);">
+     style="z-index: 9999; background-color: rgba(0, 0, 0, 0.85);">
+     
     <!-- Lottie Animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player
         src="https://assets2.lottiefiles.com/packages/lf20_usmfx6bp.json"
         background="transparent"
         speed="1"
-        style="width: 200px; height: 200px;margin-bottom:-4em;"
+        style="width: 200px; height: 200px; margin-bottom: -3em;"
         loop
         autoplay>
     </lottie-player>
-    <h4 class="fw-bold mt-1">Loading... <span id="progress">0%</span></h4>
+
+    <h4 class="fw-bold mt-3">Loading... <span id="progress">0%</span></h4>
 </div>
 
 <main style="margin-bottom: 0;">
@@ -22,14 +25,10 @@
 
         <!-- Animasi Wave -->
         <img src="https://threedio-prod-var-cdn.icons8.com/if/preview_sets/previews/WdouIOZIHd9p4jHt.webp"
-            alt="Waving silhouette man" style="
-            position: absolute;
-            top: 8%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            max-width: 450px;
-            height: auto;" data-aos="fade-down" data-aos-duration="1000" />
+            alt="Waving silhouette man"
+            class="img-fluid"
+            style="position: absolute; top: 8%; left: 50%; transform: translateX(-50%); max-width: 450px; height: auto;"
+            data-aos="fade-down" data-aos-duration="1000" />
 
         <div data-aos="fade-up" data-aos-delay="500">
             <h1 class="display-4 fw-bold">Candra Yuliawan</h1>
@@ -41,10 +40,13 @@
 
 <?php include 'includes/footer.php'; ?>
 
-<!-- CSS Optional -->
+<!-- CSS -->
 <style>
     #preloader {
-        transition: opacity 0.6s ease;
+        transition: opacity 0.8s ease;
+    }
+    body.loading {
+        overflow: hidden; /* biar ga bisa scroll pas loader muncul */
     }
 </style>
 
@@ -52,7 +54,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     let preloader = document.getElementById("preloader");
-    let progress = document.getElementById("progress"); // kalau pakai persentase
+    let progress = document.getElementById("progress");
+    document.body.classList.add("loading");
 
     let count = 0;
     let interval = setInterval(() => {
@@ -61,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (count >= 100) {
             clearInterval(interval);
-            // animasi hilang smooth
-            preloader.style.transition = "opacity 0.8s ease";
-            preloader.style.opacity = "0";
+
+            preloader.style.opacity = "0"; // fade out
+            document.body.classList.remove("loading");
 
             setTimeout(() => {
-                preloader.style.display = "none"; // bener2 hilang dari layer
+                preloader.style.display = "none"; // remove dari layar
             }, 800);
         }
-    }, 70); // 100% dalam ~7 detik
+    }, 30); // 100% dalam ~7 detik
 });
 </script>
