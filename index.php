@@ -31,7 +31,7 @@
             data-aos="fade-down" data-aos-duration="1000" />
 
         <div data-aos="fade-up" data-aos-delay="500">
-            <h1 class="display-4 fw-bold">Candra Yuliawanus</h1>
+            <h1 class="display-4 fw-bold">Candra Yuliawan</h1>
             <p class="lead">Office Administrator | Web Developer Enthusiast</p>
             <a href="projects.php" class="btn btn-warning mt-3">Lihat Proyek Saya</a>
         </div>
@@ -46,7 +46,7 @@
         transition: opacity 0.8s ease;
     }
     body.loading {
-        overflow: hidden; /* biar ga bisa scroll pas loader muncul */
+        overflow: hidden; /* halaman ga bisa di-scroll saat loading */
     }
 </style>
 
@@ -65,13 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
         if (count >= 100) {
             clearInterval(interval);
 
-            preloader.style.opacity = "0"; // fade out
+            // animasi hilang
+            preloader.style.opacity = "0";
             document.body.classList.remove("loading");
 
             setTimeout(() => {
-                preloader.style.display = "none"; // remove dari layar
+                preloader.style.display = "none"; 
+                preloader.style.zIndex = "-1"; // biar ga nutup halaman
             }, 800);
         }
-    }, 30); // 100% dalam ~7 detik
+    }, 70); // ~7 detik total
 });
 </script>
