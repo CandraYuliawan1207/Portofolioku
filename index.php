@@ -74,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 preloader.style.zIndex = "-1"; // biar ga nutup halaman
             }, 800);
         }
-    }, 70); // ~7 detik total
+    }, 30); // ~7 detik total
 });
 </script>
