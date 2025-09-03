@@ -5,7 +5,10 @@
       <!-- Kolom 1: Brand Info -->
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold" style="color: #efb509;">CYuliawan</h5>
-        <p style="font-size: 0.875rem;">Portofolio pribadi Candra Yuliawan yang menampilkan berbagai proyek dan keahlian di bidang Web Development & Administrasi Perkantoran.</p>
+        <p style="font-size: 0.875rem;">
+          Portofolio pribadi Candra Yuliawan yang menampilkan berbagai proyek dan keahlian 
+          di bidang Web Development & Administrasi Perkantoran.
+        </p>
       </div>
 
       <!-- Kolom 2: Menu Navigasi -->
@@ -19,6 +22,7 @@
         </ul>
       </div>
 
+      <!-- Kolom 3: Lainnya -->
       <div class="col-md-2 mb-4">
         <h6 class="text-uppercase fw-bold mb-3">Lainnya</h6>
         <ul class="list-unstyled" style="font-size: 0.875rem;">
@@ -30,7 +34,7 @@
         </ul>
       </div>
 
-      <!-- Kolom 3: Kontak Info -->
+      <!-- Kolom 4: Kontak Info -->
       <div class="col-md-4 mb-4">
         <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
         <p style="font-size: 0.875rem;">
@@ -51,6 +55,7 @@
   </div>
 </footer>
 
+<!-- Responsive SweetAlert -->
 <style>
   @media screen and (max-width: 576px) {
     .swal2-popup {
@@ -58,20 +63,16 @@
       max-width: 95% !important;
       padding: 1.2rem !important;
     }
-
     .swal2-title {
       font-size: 1.1rem !important;
     }
-
     .swal2-html-container {
       font-size: 0.9rem !important;
     }
-
     .swal2-actions {
       flex-direction: column;
       gap: 0.5rem;
     }
-
     .swal2-styled {
       width: 100% !important;
       box-sizing: border-box;
@@ -79,19 +80,22 @@
   }
 </style>
 
-
+<!-- Vendor Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/script.js"></script>
+
+<!-- Init AOS -->
 <script>
-  // Inisialisasi AOS dengan konfigurasi lebih stabil
   AOS.init({
-    duration: 700,
-    easing: "ease-in-out",
-    once: true,
-    offset: 120
+    duration: 700,          // durasi animasi
+    easing: "ease-in-out",  // efek transisi
+    once: true,             // animasi sekali saja
+    offset: 120             // jarak sebelum animasi jalan
   });
 
-  // Pastikan AOS refresh setelah semua konten (gambar, preloader, dll) selesai
+  // Refresh setelah semua konten selesai (gambar, preloader, dll)
   window.addEventListener("load", function() {
     setTimeout(() => {
       AOS.refresh();
@@ -99,10 +103,7 @@
   });
 </script>
 
-<script src="assets/js/script.js"></script>
-<!-- SweetAlert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+<!-- Form Handler (aman di semua halaman) -->
 <script>
   const form = document.getElementById("contactForm");
   if (form) {
@@ -134,7 +135,7 @@
             });
           }
         })
-        .catch(error => {
+        .catch(() => {
           Swal.fire({
             icon: 'error',
             title: 'Kesalahan',
@@ -146,5 +147,4 @@
   }
 </script>
 </body>
-
 </html>
