@@ -83,55 +83,67 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  // Inisialisasi AOS dengan konfigurasi lebih stabil
+  AOS.init({
+    duration: 700,
+    easing: "ease-in-out",
+    once: true,
+    offset: 120
+  });
+
+  // Pastikan AOS refresh setelah semua konten (gambar, preloader, dll) selesai
+  window.addEventListener("load", function() {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+  });
 </script>
+
 <script src="assets/js/script.js"></script>
 <!-- SweetAlert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // mencegah submit default
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
 
-    const formData = new FormData(this);
+      const formData = new FormData(this);
 
-    fetch("https://formsubmit.co/ajax/candrayln275@gmail.com", {
-        method: "POST",
-        headers: {
-          'Accept': 'application/json'
-        },
-        body: formData
-      })
-      .then(response => {
-        if (response.ok) {
-          Swal.fire({
-            icon: 'success',
-            title: 'Terkirim!',
-            text: 'Email kamu berhasil terkirim.',
-            confirmButtonColor: '#198754',
-            customClass: {
-              popup: 'swal2-responsive'
-            }
-          });
-          this.reset(); // reset form
-        } else {
+      fetch("https://formsubmit.co/ajax/candrayln275@gmail.com", {
+          method: "POST",
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        })
+        .then(response => {
+          if (response.ok) {
+            Swal.fire({
+              icon: 'success',
+              title: 'Terkirim!',
+              text: 'Email kamu berhasil terkirim.',
+              confirmButtonColor: '#198754'
+            });
+            this.reset();
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops!',
+              text: 'Gagal mengirim. Coba lagi nanti.',
+              confirmButtonColor: '#dc3545'
+            });
+          }
+        })
+        .catch(error => {
           Swal.fire({
             icon: 'error',
-            title: 'Oops!',
-            text: 'Gagal mengirim. Coba lagi nanti.',
+            title: 'Kesalahan',
+            text: 'Terjadi kesalahan jaringan.',
             confirmButtonColor: '#dc3545'
           });
-        }
-      })
-      .catch(error => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Kesalahan',
-          text: 'Terjadi kesalahan jaringan.',
-          confirmButtonColor: '#dc3545'
         });
-      });
-  });
+    });
+  }
 </script>
 </body>
 
