@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 <main>
-    <section class="container py-5" style="overflow-x: hidden; overflow-y:hidden;">
+    <section class="container py-5" style="overflow-x: hidden">
         <!-- Judul -->
         <div class="text-center mb-5" data-aos="fade-down">
             <h2 class="fw-bold">Keahlian Saya</h2>
@@ -72,14 +72,14 @@
         <!-- Tools & Software -->
         <div class="mb-5" data-aos="fade-left">
             <h4 class="fw-bold mb-4"><i class="fa-solid fa-toolbox me-2 text-success"></i>Tools & Software</h4>
-            <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center">
-                <img src="https://img.icons8.com/color/48/microsoft-word-2019--v1.png" alt="Microsoft Word" height="40" data-aos="flip-up">
-                <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Microsoft Excel" height="40" data-aos="flip-up" data-aos-delay="100">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" height="40" data-aos="flip-up" data-aos-delay="200">
-                <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" alt="XAMPP" height="40" data-aos="flip-up" data-aos-delay="300">
-                <img src="https://laragon.org/logo.svg" alt="Laragon" height="40" data-aos="flip-up" data-aos-delay="400">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" height="40" data-aos="flip-up" data-aos-delay="500">
-                <img src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg" alt="Canva" height="40" data-aos="flip-up" data-aos-delay="600">
+            <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center" data-aos="fade-up">
+                <img src="https://img.icons8.com/color/48/microsoft-word-2019--v1.png" alt="Microsoft Word" height="40" >
+                <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Microsoft Excel" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" height="40">
+                <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" alt="XAMPP" height="40">
+                <img src="https://laragon.org/logo.svg" alt="Laragon" height="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" height="40">
+                <img src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg" alt="Canva" height="40">
             </div>
         </div>
 
