@@ -1,6 +1,8 @@
 <?php include 'includes/header.php'; ?>
 <!-- PRELOADER LOTTIE -->
-<div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" style="z-index: 9999; background-color: rgba(0, 0, 0, 0.6);">
+<div id="preloader" 
+     class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white-50" 
+     style="z-index: 9999; background-color: rgba(0, 0, 0, 0.8);">
     <!-- Lottie Animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <lottie-player
@@ -48,22 +50,25 @@
 
 <!-- JS Loader Control -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let percent = 0;
-        const progressText = document.getElementById("progress");
-        const preloader = document.getElementById("preloader");
+document.addEventListener("DOMContentLoaded", function () {
+    let preloader = document.getElementById("preloader");
+    let progress = document.getElementById("progress"); // kalau pakai persentase
 
-        const interval = setInterval(() => {
-            percent++;
-            progressText.textContent = percent + "%";
+    let count = 0;
+    let interval = setInterval(() => {
+        count++;
+        if (progress) progress.innerText = count + "%";
 
-            if (percent >= 100) {
-                clearInterval(interval);
-                preloader.style.opacity = "0";
-                setTimeout(() => {
-                    preloader.style.display = "none";
-                }, 400); // Waktu hilangnya preloader
-            }
-        }, 40); // 40ms x 100 = 4000ms (4 detik)
-    });
+        if (count >= 100) {
+            clearInterval(interval);
+            // animasi hilang smooth
+            preloader.style.transition = "opacity 0.8s ease";
+            preloader.style.opacity = "0";
+
+            setTimeout(() => {
+                preloader.style.display = "none"; // bener2 hilang dari layer
+            }, 800);
+        }
+    }, 70); // 100% dalam ~7 detik
+});
 </script>
