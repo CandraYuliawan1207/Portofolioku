@@ -11,7 +11,7 @@
         </p>
       </div>
 
-      <!-- Kolom 2: Menu Navigasi -->
+      <!-- Kolom 2: Navigasi -->
       <div class="col-md-2 mb-4">
         <h6 class="text-uppercase fw-bold mb-3">Navigasi</h6>
         <ul class="list-unstyled" style="font-size: 0.875rem;">
@@ -34,13 +34,13 @@
         </ul>
       </div>
 
-      <!-- Kolom 4: Kontak Info -->
+      <!-- Kolom 4: Kontak -->
       <div class="col-md-4 mb-4">
         <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
         <p style="font-size: 0.875rem;">
           <i class="fa-solid fa-envelope me-2 text-success"></i> candrayln275@gmail.com<br>
           <i class="fa-solid fa-phone me-2 text-success"></i> +62 822-8207-6291<br>
-          <i class="fa-solid fa-location-dot me-2 text-success"></i> Air Sugihan, Sumatera - Selatan, Indonesia, 30656
+          <i class="fa-solid fa-location-dot me-2 text-success"></i> Air Sugihan, Sumatera Selatan, 30656
         </p>
       </div>
 
@@ -48,103 +48,78 @@
 
     <hr class="border-secondary">
 
-    <!-- Copyright -->
     <div class="text-center" style="font-size: 0.8rem;">
       <p class="mb-0">&copy;<?= date("Y") ?> <strong>CYuliawan Web Developer</strong>. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
-<!-- Responsive SweetAlert -->
-<style>
-  @media screen and (max-width: 576px) {
-    .swal2-popup {
-      width: 95% !important;
-      max-width: 95% !important;
-      padding: 1.2rem !important;
-    }
-    .swal2-title {
-      font-size: 1.1rem !important;
-    }
-    .swal2-html-container {
-      font-size: 0.9rem !important;
-    }
-    .swal2-actions {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .swal2-styled {
-      width: 100% !important;
-      box-sizing: border-box;
-    }
-  }
-</style>
-
 <!-- Vendor Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
 <!-- Init AOS -->
 <script>
-  AOS.init({
-    duration: 700,          // durasi animasi
-    easing: "ease-in-out",  // efek transisi
-    once: true,             // animasi sekali saja
-    offset: 120             // jarak sebelum animasi jalan
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 120
+    });
   });
 
-  // Refresh setelah semua konten selesai (gambar, preloader, dll)
-  window.addEventListener("load", function() {
+  window.addEventListener("load", function () {
     setTimeout(() => {
       AOS.refresh();
-    }, 500);
+    }, 1000); // kasih waktu lebih lega
   });
 </script>
 
-<!-- Form Handler (aman di semua halaman) -->
+<!-- Form Handler -->
 <script>
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
 
-      const formData = new FormData(this);
-
-      fetch("https://formsubmit.co/ajax/candrayln275@gmail.com", {
-          method: "POST",
-          headers: { 'Accept': 'application/json' },
-          body: formData
-        })
-        .then(response => {
-          if (response.ok) {
-            Swal.fire({
-              icon: 'success',
-              title: 'Terkirim!',
-              text: 'Email kamu berhasil terkirim.',
-              confirmButtonColor: '#198754'
-            });
-            this.reset();
-          } else {
+        fetch("https://formsubmit.co/ajax/candrayln275@gmail.com", {
+            method: "POST",
+            headers: { 'Accept': 'application/json' },
+            body: formData
+          })
+          .then(response => {
+            if (response.ok) {
+              Swal.fire({
+                icon: 'success',
+                title: 'Terkirim!',
+                text: 'Email kamu berhasil terkirim.',
+                confirmButtonColor: '#198754'
+              });
+              this.reset();
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops!',
+                text: 'Gagal mengirim. Coba lagi nanti.',
+                confirmButtonColor: '#dc3545'
+              });
+            }
+          })
+          .catch(() => {
             Swal.fire({
               icon: 'error',
-              title: 'Oops!',
-              text: 'Gagal mengirim. Coba lagi nanti.',
+              title: 'Kesalahan',
+              text: 'Terjadi kesalahan jaringan.',
               confirmButtonColor: '#dc3545'
             });
-          }
-        })
-        .catch(() => {
-          Swal.fire({
-            icon: 'error',
-            title: 'Kesalahan',
-            text: 'Terjadi kesalahan jaringan.',
-            confirmButtonColor: '#dc3545'
           });
-        });
-    });
-  }
+      });
+    }
+  });
 </script>
 </body>
 </html>

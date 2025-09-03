@@ -98,7 +98,7 @@
             foreach ($services as $i => $srv):
                 $id = "featureCollapse$i";
             ?>
-                <div class="col" data-aos="zoom-in-up" data-aos-delay="<?= $i * 150 ?>">
+                <div class="col" data-aos="zoom-in-up" data-aos-delay="<?= $i * 100 ?>">
                     <div class="card h-100 shadow-sm border-0">
                         <div
                             class="card-header bg-<?= $srv['color'] ?> bg-opacity-10 text-<?= $srv['color'] ?> text-center">
