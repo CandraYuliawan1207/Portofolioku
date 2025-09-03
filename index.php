@@ -31,7 +31,7 @@
             data-aos="fade-down" data-aos-duration="1000" />
 
         <div data-aos="fade-up" data-aos-delay="500">
-            <h1 class="display-4 fw-bold">Candra Yuliawan</h1>
+            <h1 class="display-4 fw-bold">Candra Yuliawanus</h1>
             <p class="lead">Office Administrator | Web Developer Enthusiast</p>
             <a href="projects.php" class="btn btn-warning mt-3">Lihat Proyek Saya</a>
         </div>
